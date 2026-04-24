@@ -1,0 +1,44 @@
+.hero { padding: 100px 0 60px; border-bottom: 1px solid rgba(255,255,255,0.06); background: radial-gradient(ellipse at 60% 50%, rgba(16,185,129,0.07) 0%, transparent 60%); }
+.heroTitle { font-size: clamp(2.5rem,5vw,4rem); font-weight: 300; margin: 12px 0 16px; }
+.heroTitle em { color: #10b981; font-style: italic; }
+.heroDesc { color: #64748b; max-width: 560px; font-size: 1rem; line-height: 1.75; }
+/* Stepper */
+.stepper { display: flex; align-items: center; justify-content: center; gap: 0; margin-bottom: 48px; }
+.stepItem { display: flex; align-items: center; gap: 10px; position: relative; }
+.stepCircle { width: 44px; height: 44px; border-radius: 50%; background: rgba(255,255,255,0.04); border: 2px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; color: #475569; font-size: 0.8rem; flex-shrink: 0; transition: all 0.3s; }
+.stepItem span { font-size: 0.82rem; color: #475569; white-space: nowrap; margin-right: 8px; }
+.stepActive .stepCircle { background: rgba(201,168,76,0.15); border-color: #c9a84c; color: #c9a84c; }
+.stepActive span { color: #ffffff; }
+.stepDone .stepCircle { background: rgba(16,185,129,0.15); border-color: #10b981; color: #10b981; }
+.stepLine { width: 48px; height: 2px; background: rgba(255,255,255,0.08); margin: 0 4px; flex-shrink: 0; }
+.stepLineDone { background: #10b981; }
+/* Form */
+.formCard { max-width: 760px; margin: 0 auto; background: linear-gradient(145deg, #111827, #0f1929); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 48px; }
+.formStep h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; margin-bottom: 8px; }
+.formStep > p { color: #64748b; margin-bottom: 32px; }
+.stepHeader { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+.stepHeader h3 { margin: 0; }
+.formGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 24px; }
+.formActions { display: flex; align-items: center; gap: 16px; margin-top: 40px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.07); }
+.error { background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3); border-radius: 8px; padding: 12px 16px; color: #ef4444; font-size: 0.875rem; margin-top: 20px; }
+/* Results */
+.resultHeader { text-align: center; }
+.resultHeader h1 { font-size: clamp(2rem,4vw,3rem); margin: 16px 0 8px; }
+.resultHeader p { color: #64748b; }
+.resultGrid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; }
+.overallCard { display: flex; align-items: center; gap: 36px; padding: 36px; background: linear-gradient(145deg,#111827,#0f1929); border: 2px solid; border-radius: 20px; margin-bottom: 28px; }
+.overallLeft {}
+.overallRight {}
+.maturityBadge { display: inline-flex; padding: 6px 16px; border-radius: 100px; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; border: 1px solid; }
+.subScores { display: flex; gap: 20px; justify-content: space-around; padding: 28px; background: rgba(255,255,255,0.02); border-radius: 16px; border: 1px solid rgba(255,255,255,0.07); }
+.ring { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.ringLabel { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; }
+.recoTitle { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; margin-bottom: 20px; }
+.recoItem { display: flex; gap: 14px; padding: 16px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 10px; margin-bottom: 12px; }
+.recoNum { width: 26px; height: 26px; border-radius: 50%; background: rgba(201,168,76,0.15); color: #c9a84c; display: flex; align-items: center; justify-content: center; font-size: 0.78rem; font-weight: 700; flex-shrink: 0; }
+.recoItem p { font-size: 0.875rem; color: #94a3b8; line-height: 1.65; margin: 0; }
+.ctaBox { padding: 28px; background: linear-gradient(135deg, rgba(201,168,76,0.08), rgba(16,185,129,0.05)); border: 1px solid rgba(201,168,76,0.2); border-radius: 16px; margin-top: 24px; }
+.ctaBox h4 { color: #ffffff; margin-bottom: 10px; font-family: 'DM Sans', sans-serif; }
+.ctaBox p { font-size: 0.875rem; color: #64748b; line-height: 1.7; margin: 0; }
+@media (max-width: 900px) { .resultGrid { grid-template-columns: 1fr; } .overallCard { flex-direction: column; text-align: center; } .subScores { flex-wrap: wrap; } }
+@media (max-width: 700px) { .formGrid { grid-template-columns: 1fr; } .formCard { padding: 28px 20px; } .stepper { flex-wrap: wrap; gap: 8px; } .stepLine { display: none; } }

@@ -1,0 +1,20 @@
+.page { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 60px 20px; background: radial-gradient(ellipse at 50% 30%, rgba(201,168,76,0.07) 0%, transparent 60%); }
+.card { width: 100%; max-width: 480px; background: linear-gradient(145deg,#111827,#0f1929); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; padding: 48px 44px; }
+.logoLink { display: flex; justify-content: center; margin-bottom: 32px; }
+.logo { display: flex; align-items: center; gap: 10px; font-family: 'DM Mono',monospace; font-size: 1rem; letter-spacing: 0.2em; color: #ffffff; }
+.logoMark { width: 36px; height: 36px; background: linear-gradient(135deg,#c9a84c,#e4c97e); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond',serif; font-size: 1.2rem; font-weight: 600; color: #0a0e17; }
+.title { font-family: 'Cormorant Garamond',serif; font-size: 2rem; text-align: center; margin-bottom: 8px; }
+.sub { text-align: center; color: #64748b; font-size: 0.9rem; margin-bottom: 28px; }
+.error { background: rgba(239,68,68,0.08); border: 1px solid rgba(239,68,68,0.3); border-radius: 8px; padding: 12px 16px; color: #ef4444; font-size: 0.875rem; margin-bottom: 20px; }
+.form { display: flex; flex-direction: column; gap: 18px; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.pwWrap { position: relative; }
+.pwWrap .form-input { padding-right: 44px; }
+.pwToggle { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); color: #64748b; padding: 4px; }
+.pwToggle:hover { color: #94a3b8; }
+.switchText { text-align: center; color: #64748b; font-size: 0.875rem; margin-top: 20px; }
+.switchLink { color: #c9a84c; }
+.divider { text-align: center; position: relative; margin: 20px 0; }
+.divider::before { content: ''; position: absolute; top: 50%; left: 0; right: 0; height: 1px; background: rgba(255,255,255,0.07); }
+.divider span { position: relative; background: #111827; padding: 0 14px; font-size: 0.78rem; color: #475569; text-transform: uppercase; letter-spacing: 0.08em; }
+@media (max-width: 600px) { .card { padding: 32px 24px; } .grid2 { grid-template-columns: 1fr; } }

@@ -1,0 +1,31 @@
+.hero { padding: 100px 0 60px; border-bottom: 1px solid rgba(255,255,255,0.06); background: radial-gradient(ellipse at 60% 40%, rgba(59,130,246,0.07) 0%, transparent 60%); }
+.heroTitle { font-size: clamp(2.5rem,5vw,4rem); font-weight: 300; margin: 12px 0 16px; }
+.heroTitle em { color: #c9a84c; font-style: italic; }
+.heroDesc { color: #64748b; max-width: 560px; font-size: 1rem; line-height: 1.75; }
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+.card { background: linear-gradient(145deg, #111827, #0f1929); border: 1px solid rgba(255,255,255,0.07); border-radius: 18px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; }
+.card:hover { transform: translateY(-4px); box-shadow: 0 20px 50px rgba(0,0,0,0.4); }
+.cardHeader { display: flex; gap: 20px; align-items: flex-start; padding: 28px; }
+.iconWrap { width: 60px; height: 60px; border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.clientBadge { display: inline-flex; padding: 3px 10px; background: rgba(255,255,255,0.06); border-radius: 100px; font-size: 0.72rem; color: #64748b; margin-bottom: 6px; }
+.cardName { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; color: #ffffff; margin-bottom: 4px; font-weight: 600; }
+.cardTagline { font-size: 0.82rem; font-weight: 500; line-height: 1.5; }
+.cardBody { padding: 0 28px 28px; }
+.cardDesc { font-size: 0.875rem; color: #64748b; line-height: 1.75; margin-bottom: 24px; }
+.section { margin-bottom: 20px; }
+.sectionTitle { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.15em; color: #475569; margin-bottom: 12px; font-family: 'DM Sans', sans-serif; font-weight: 600; }
+.challenges { display: flex; flex-direction: column; gap: 8px; }
+.challenge { display: flex; align-items: center; gap: 10px; font-size: 0.85rem; color: #94a3b8; }
+.challengeDot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+.serviceTags { display: flex; flex-wrap: wrap; gap: 8px; }
+.serviceTag { padding: 5px 12px; border-radius: 100px; font-size: 0.75rem; font-weight: 500; border: 1px solid; }
+.resultBanner { padding: 14px 18px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.resultLabel { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: #64748b; }
+.resultBanner strong { font-size: 0.9rem; font-weight: 600; }
+.cta { display: inline-flex; align-items: center; gap: 8px; font-size: 0.82rem; font-weight: 500; padding: 10px 18px; border-radius: 6px; border: 1px solid; transition: all 0.2s; }
+.cta:hover { opacity: 0.8; transform: translateX(2px); }
+.ctaBanner { padding: 80px 0; background: radial-gradient(ellipse at center, rgba(201,168,76,0.07) 0%, transparent 70%); border-top: 1px solid rgba(255,255,255,0.06); }
+.ctaContent { text-align: center; max-width: 540px; margin: 0 auto; }
+.ctaContent h2 { font-size: 2rem; margin-bottom: 12px; }
+.ctaContent p { color: #64748b; }
+@media (max-width: 1024px) { .grid { grid-template-columns: 1fr; } }
